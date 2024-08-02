@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    padding: 20px; 
+}
+
+.tribute-info {
+    text-align: center; 
+    max-width: 600px; 
+
+}
