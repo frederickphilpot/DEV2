@@ -79,6 +79,13 @@
 	margin-right: 24px;
  
   
-  
 }
-
+.profile_background {
+  background-color: #E5E5E5;
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  align-items: right;
+  justify-content: space-between;
+  margin-top: 24px;
+}
