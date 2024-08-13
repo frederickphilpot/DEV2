@@ -1,13 +1,8 @@
-/body {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    height: 65%;
-    align-items: center;
-    justify-content: space-evenly;
-    background: rgb(26,26,26);
-    background: linear-gradient(90deg, rgba(26,26,26,1) 19%, rgba(51,83,76,1) 43%, rgba(79,136,117,1) 58%, rgba(51,75,69,1) 79%);
-      );
+body {
+   background: rgb(26,26,26);
+   background: linear-gradient(90deg, rgba(26,26,26,1) 19%, rgba(51,83,76,1) 43%, rgba(79,136,117,1) 58%, rgba(26,26,26,1) 79%);
+    font-family: Arial, sans-serif;
+    color: whitesmoke;
   }
   
   header {
@@ -17,15 +12,15 @@
   }
   
   nav ul {
-      list-style: none;
+      list-style-position: inside;
       padding: 0;
       text-align: center;
       margin: 0;
   }
   
   nav ul li {
-      display: inline;
-      margin: 0 15px;
+    display: inline;
+         margin: 0 15px;
   }
   
   nav ul li a {
@@ -37,6 +32,26 @@
   nav ul li a:hover {
       text-decoration: underline;
   }
+
+  .projects{ 
+    list-style-position: inside;
+      padding: 0;
+      text-align: center;
+      margin: 0;
+      margin-left: 0%;
+  }
+  .projects li{
+    display: inline;
+    margin: 0 15px;
+  }
+    .projects li a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .projects li a:hover{
+        text-decoration: underline;
+    }
   
   .avatar-container {
       text-align: center;
