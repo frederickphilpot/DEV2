@@ -1,8 +1,105 @@
-@import url(../vendor/normalize.css);
-@import url(../fonts/fonts.css);
-@import url(../blocks/page.css);
-@import url(../blocks/profile.css);
-@import url(../blocks/header.css);
-@import url(../blocks/cards.css);
-@import url(../blocks/footer.css);
-@import url(../blocks/card.css);
+/* General body styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar styles */
+#navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li {
+    margin: 0 15px;
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Gradient background and avatar styles */
+body {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Radient background color */
+    color: #333;
+}
+
+.profile {
+    text-align: center;
+    margin-top: 100px; /* Adjust to avoid overlap with fixed navbar */
+}
+
+.profile__image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circular avatar */
+    border: 5px solid #fff; /* White border around the avatar */
+    object-fit: cover; /* Ensure the image covers the circular area */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional shadow for added effect */
+}
+
+/* Section styles */
+#welcome-section {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.project-tile {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 800px;
+}
+
+.project-tile h2 {
+    margin: 0 0 10px;
+}
+
+.project-tile a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.project-tile a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer__copy {
+    margin: 0;
+}

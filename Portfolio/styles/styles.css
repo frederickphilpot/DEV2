@@ -1,14 +1,18 @@
-bbody, h1, h2, p, a {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General body styles */
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: repeating-linear-gradient(
+        45deg,
+        #ff7e5f,
+        #ff7e5f 10px,
+        #feb47b 10px,
+        #feb47b 20px
+    );
 }
 
+/* Navbar styles */
 #navbar {
     position: fixed;
     width: 100%;
@@ -23,6 +27,8 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 #navbar li {
@@ -39,35 +45,44 @@ body {
     text-decoration: underline;
 }
 
-#welcome-section {
-    height: 100vh;
-    background: #f4f4f4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Avatar and profile styles */
+.profile {
     text-align: center;
+    padding: 80px 20px 20px; /* Adjust top padding to avoid overlap with navbar */
 }
 
-#welcome-section h1 {
-    font-size: 2.5rem;
-    color: #333;
+.profile__image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff; /* White border around the avatar */
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional shadow for added effect */
+}
+
+#welcome-section {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
 }
 
 #projects {
     padding: 20px;
-    background: #e2e2e2;
 }
 
 .project-tile {
     background: #fff;
-    margin-bottom: 20px;
     padding: 20px;
+    margin-bottom: 20px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 8px;
+    max-width: 800px;
 }
 
 .project-tile h2 {
-    margin-bottom: 10px;
+    margin: 0 0 10px;
 }
 
 .project-tile a {
@@ -79,17 +94,17 @@ body {
     text-decoration: underline;
 }
 
-/* Media Query for responsiveness */
-@media (max-width: 768px) {
-    #navbar ul {
-        flex-direction: column;
-    }
+/* Footer styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
-    #navbar li {
-        margin: 10px 0;
-    }
-
-    #welcome-section h1 {
-        font-size: 1.8rem;
-    }
+.footer__copy {
+    margin: 0;
 }
