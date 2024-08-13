@@ -53,6 +53,30 @@ body {
     color: #333;
 }
 
+.welcome-section {
+    display: flex;
+    align-items: center;
+    max-width: 880px;
+    width: 50%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 36.25px;
+    
+  
+  }
+
+.profile__image {
+    height: 120px;
+      width: 120px;
+      border-radius: 60%;
+      object-fit: cover;
+      background-position: center;
+      margin-right: 24px;
+   
+    
+    
+  }
+
 #projects {
     padding: 20px;
     background: #e2e2e2;
