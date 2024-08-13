@@ -1,4 +1,4 @@
-body, h1, h2, p, a {
+bbody, h1, h2, p, a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -52,9 +52,6 @@ body {
     font-size: 2.5rem;
     color: #333;
 }
-
-
-  
 
 #projects {
     padding: 20px;
